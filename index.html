@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRE Inmobiliaria - Galería de Propiedades</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .section h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .property-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 5px solid #667eea;
+        }
+        .property-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .property-card h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        .price {
+            color: #667eea;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .location {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        .priority {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .priority-alta { background: #ff4757; color: white; }
+        .priority-media { background: #ffa502; color: white; }
+        .priority-baja { background: #2ed573; color: white; }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+        }
+        .contact {
+            font-size: 1.3em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏠 IRE Inmobiliaria</h1>
+            <p>Galería de Propiedades Disponibles - Mayo 2025</p>
+        </header>
+
+        <div class="section">
+            <h2>🔥 Propiedades en Venta</h2>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <span class="priority priority-media">PRIORIDAD MEDIA</span>
+                    <h3>Terreno Bicentenarios</h3>
+                    <div class="price">$588,000</div>
+                    <div class="location">📍 Santo Domingo, Tehuacán<br>📐 98 m²</div>
+                    <a href="venta/terreno-bicentenarios.html" class="btn">Ver Fotos 📸</a>
+                </div>
+
+                <div class="property-card">
+                    <span class="priority priority-baja">PRIORIDAD BAJA</span>
+                    <h3>Casa Francisco Sarabia</h3>
+                    <div class="price">$14,000,000</div>
+                    <div class="location">📍 Tehuacán<br>📐 1,430 m² terreno / 404 m² construcción</div>
+                    <a href="venta/casa-francisco-sarabia.html" class="btn">Ver Fotos 📸</a>
+                </div>
+
+                <div class="property-card">
+                    <span class="priority priority-baja">PRIORIDAD BAJA</span>
+                    <h3>Casa Cinco Bosques</h3>
+                    <div class="price">$8,000,000</div>
+                    <div class="location">📍 Fracc. Cinco Bosques, Tehuacán<br>📐 400 m²</div>
+                    <a href="venta/casa-cinco-bosques.html" class="btn">Ver Fotos 📸</a>
+                </div>
+
+                <div class="property-card">
+                    <span class="priority priority-media">PRIORIDAD MEDIA</span>
+                    <h3>Casa Valle de la Luna</h3>
+                    <div class="price">$5,200,000</div>
+                    <div class="location">📍 Valle del Sol, Tehuacán<br>📐 276 m² terreno / 186 m² construcción</div>
+                    <a href="venta/casa-valle-luna.html" class="btn">Ver Fotos 📸</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔑 Propiedades en Renta</h2>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <span class="priority priority-alta">🔥 PRIORIDAD ALTA</span>
+                    <h3>Casa Jazmín</h3>
+                    <div class="price">$5,300/mes</div>
+                    <div class="location">📍 Calle Jazmín #432, Col. Jacarandas, Tehuacán<br>📐 92 m² | Uso mixto habitacional/comercial</div>
+                    <a href="renta/jazmin.html" class="btn">Ver Fotos 📸</a>
+                </div>
+
+                <div class="property-card">
+                    <span class="priority priority-alta">🔥 PRIORIDAD ALTA</span>
+                    <h3>Cuarto 4 - 16 Norte</h3>
+                    <div class="price">$2,500/mes</div>
+                    <div class="location">📍 16 Norte #127, Col. Aquiles Serdán, Tehuacán<br>⚠️ Última unidad disponible</div>
+                    <a href="renta/16norte-cuartos.html" class="btn">Ver Fotos 📸</a>
+                </div>
+
+                <div class="property-card">
+                    <span class="priority priority-baja">PRIORIDAD BAJA</span>
+                    <h3>Departamento Valsequillo</h3>
+                    <div class="price">$5,000/mes</div>
+                    <div class="location">📍 Blvd. Valsequillo, Tehuacán<br>📐 60 m² | 2 recámaras</div>
+                    <a href="renta/valsequillo.html" class="btn">Ver Fotos 📸</a>
+                </div>
+
+                <div class="property-card">
+                    <span class="priority priority-alta">🔥 PRIORIDAD ALTA</span>
+                    <h3>Departamento Aquiles Serdán</h3>
+                    <div class="price">$2,500/mes</div>
+                    <div class="location">📍 16 Norte #127, Col. Aquiles Serdán, Tehuacán<br>📐 1 recámara</div>
+                    <a href="renta/16norte-cuartos.html" class="btn">Ver Fotos 📸</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📥 Descargas</h2>
+            <div style="text-align: center; padding: 20px;">
+                <p style="margin-bottom: 20px; font-size: 1.1em;">Descarga todos los copys para publicaciones:</p>
+                <a href="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/documentos/copys-completos.zip" class="btn" style="font-size: 1.2em; padding: 15px 40px;">📄 Descargar Copys (ZIP)</a>
+            </div>
+        </div>
+
+        <footer>
+            <p class="contact">📞 Contacto: 222 851 5440</p>
+            <p>IRE Inmobiliaria de México | Tehuacán, Puebla</p>
+        </footer>
+    </div>
+</body>
+</html>

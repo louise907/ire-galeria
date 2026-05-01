@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazmín - IRE Inmobiliaria</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .back-btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .property-header {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .property-header h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        .price {
+            color: #667eea;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .details {
+            color: #666;
+            font-size: 1.1em;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        .copy-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #667eea;
+        }
+        .copy-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .copy-text {
+            color: #555;
+            line-height: 1.6;
+            white-space: pre-line;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .download-all {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-btn">← Volver al inicio</a>
+        
+        <div class="property-header">
+            <h1>🏠 Casa Jazmín</h1>
+            <div class="price">$5,300/mes</div>
+            <div class="details">
+                📍 Calle Jazmín #432, Col. Jacarandas, Tehuacán, Puebla<br>
+                📐 92 m²<br>
+                🏷️ Uso mixto: Habitacional o Comercial<br>
+                🔥 PRIORIDAD ALTA
+            </div>
+            
+            <div class="copy-section">
+                <h3>📝 Copy para publicación:</h3>
+                <div class="copy-text">✨ 𝗩𝗲𝗿𝘀𝗮𝘁𝗶𝗹 𝗰𝗮𝘀𝗮 𝗲𝗻 𝗿𝗲𝗻𝘁𝗮 en Colonia Jacarandas 🌸 Tehuacán, Puebla.📍
+💰 Renta mensual: $5,300 MXN
+
+Si buscas un espacio con 𝗽𝗼𝘁𝗲𝗻𝗰𝗶𝗮𝗹 𝗶𝗻𝗳𝗶𝗻𝗶𝘁𝗼, 𝘂𝗯𝗶𝗰𝗮𝗰𝗶𝗼́𝗻 𝗲𝘀𝘁𝗿𝗮𝘁𝗲́𝗴𝗶𝗰𝗮 𝘆 𝘃𝗲𝗿𝘀𝗮𝘁𝗶𝗹𝗶𝗱𝗮𝗱 𝘂́𝗻𝗶𝗰𝗮, esta propiedad en Calle Jazmín puede convertirse en tu próximo hogar o negocio. 🏡💼
+
+📐 Superficie: 92 m²
+
+🔹 𝗘𝘀𝗽𝗮𝗰𝗶𝗼𝘀:
+▪️ 2 recámaras amplias y bien iluminadas
+▪️ 1 baño completo
+▪️ Área abierta ideal para sala-comedor o negocio
+▪️ Puerta a calle con alto flujo peatonal
+▪️ Uso mixto: habitacional o comercial
+
+💡 𝗩𝗲𝗿𝘀𝗮𝘁𝗶𝗹𝗶𝗱𝗮𝗱 𝘀𝗶𝗻 𝗹𝗶́𝗺𝗶𝘁𝗲𝘀:
+¿Casa familiar? Perfecta. ¿Local comercial? Ideal. ¿Restaurante? ¡Ya funcionó aquí! El espacio se adapta a tu visión.
+
+💧 𝗦𝗲𝗿𝘃𝗶𝗰𝗶𝗼𝘀 𝗶𝗻𝗰𝗹𝘂𝗶𝗱𝗼𝘀:
+• Agua: INCLUIDA
+• Basura: INCLUIDA
+
+📲 Agenda tu visita: 𝟮𝟮𝟮 𝟴𝟱𝟭 𝟱𝟰𝟰𝟬
+🌐 https://www.ireinmobiliaria.com/property/propiedad-en-jazmin
+
+#CasaEnRenta #JacarandasTehuacan #UsoMixto #LocalComercial</div>
+            </div>
+        </div>
+
+        <h2 style="color: white; text-align: center; margin-bottom: 20px;">📸 Galería de Fotos</h2>
+        
+        <div class="gallery">
+            <img src="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/fotos-renta/jazmin/EB-222267.webp" alt="Jazmín 1" onclick="window.open(this.src)">
+            <img src="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/fotos-renta/jazmin/EB-229867.webp" alt="Jazmín 2" onclick="window.open(this.src)">
+            <img src="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/fotos-renta/jazmin/EB-2867.webp" alt="Jazmín 3" onclick="window.open(this.src)">
+        </div>
+
+        <div class="download-all">
+            <p style="color: white; margin-bottom: 15px;">Click en cualquier foto para ver en tamaño completo</p>
+            <a href="../index.html" class="btn">← Volver a todas las propiedades</a>
+        </div>
+    </div>
+</body>
+</html>
