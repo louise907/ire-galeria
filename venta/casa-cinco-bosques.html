@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Cinco Bosques - IRE Inmobiliaria</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .back-btn { display: inline-block; background: white; color: #667eea; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold; margin-bottom: 20px; }
+        .property-header { background: white; border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        .property-header h1 { color: #333; font-size: 2.5em; margin-bottom: 15px; }
+        .price { color: #667eea; font-size: 2em; font-weight: bold; }
+        .details { color: #666; font-size: 1.1em; margin: 15px 0; line-height: 1.6; }
+        .download-btn { display: inline-block; background: #28a745; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; margin: 20px 10px 20px 0; }
+        .download-btn:hover { background: #218838; }
+        .copy-section { background: #f8f9fa; border-radius: 15px; padding: 20px; margin: 20px 0; border-left: 5px solid #667eea; }
+        .copy-section h3 { color: #333; margin-bottom: 10px; }
+        .copy-text { color: #555; line-height: 1.6; white-space: pre-line; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; margin-top: 30px; }
+        .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; cursor: pointer; transition: transform 0.3s; }
+        .gallery img:hover { transform: scale(1.05); }
+        .btn { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 40px; border-radius: 25px; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-btn">← Volver al inicio</a>
+        <div class="property-header">
+            <h1>🏠 Casa Cinco Bosques</h1>
+            <div class="price">$8,000,000</div>
+            <div class="details">📍 Fracc. Cinco Bosques, Tehuacán<br>📐 400 m² construcción<br>🏷️ 4 recámaras, 4.5 baños, acabados de lujo</div>
+            <a href="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/documentos/casa-cinco-bosques-fotos.zip" class="download-btn">📥 Descargar todas las fotos (ZIP)</a>
+            <div class="copy-section">
+                <h3>📝 Copy para publicación:</h3>
+                <div class="copy-text">✨ 𝗘𝘀𝗽𝗲𝗰𝘁𝗮𝗰𝘂𝗹𝗮𝗿 𝗿𝗲𝘀𝗶𝗱𝗲𝗻𝗰𝗶𝗮 en Fraccionamiento Cinco Bosques 🌳 Tehuacán, Puebla.📍
+💰 Precio: $8,000,000 MXN
+📐 Construcción: 400 m²
+🔹 4 recámaras, 4.5 baños, cocina equipada, acabados de lujo
+📲 222 851 5440
+🌐 https://www.ireinmobiliaria.com/property/casa-en-venta-en-fraccionamiento-cinco-bosques
+#CasaEnVenta #FraccionamientoCincoBosques</div>
+            </div>
+        </div>
+        <h2 style="color: white; text-align: center; margin-bottom: 20px;">📸 Galería de Fotos</h2>
+        <div class="gallery">
+            <p style="color: white; text-align: center; grid-column: 1/-1;">Fotos disponibles en el ZIP de descarga ↑</p>
+        </div>
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="../index.html" class="btn">← Volver a todas las propiedades</a>
+        </div>
+    </div>
+</body>
+</html>
