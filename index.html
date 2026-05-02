@@ -26,7 +26,8 @@
         .priority { display: inline-block; padding: 5px 15px; border-radius: 20px; font-size: 0.8em; font-weight: bold; margin-bottom: 10px; }
         .priority-alta { background: #ff4757; color: white; }
         .priority-media { background: #ffa502; color: white; }
-        .priority-baja { background: #2ed573; color: white; }
+        .no-disponible { text-align: center; padding: 40px; color: #666; font-style: italic; }
+        .update-info { text-align: center; padding: 10px; background: #e8f5e9; border-radius: 10px; margin-bottom: 20px; color: #2e7d32; }
         footer { text-align: center; padding: 30px; color: white; }
         .contact { font-size: 1.3em; margin-top: 10px; }
     </style>
@@ -35,88 +36,25 @@
     <div class="container">
         <header>
             <h1>🏠 IRE Inmobiliaria</h1>
-            <p>Galería de Propiedades Disponibles - Mayo 2025</p>
+            <p>Galería de Propiedades Disponibles</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Actualizado: 02/05/2026 00:19</p>
         </header>
+
+        <div class="update-info">
+            ✅ Esta galería se actualiza automáticamente. Solo aparecen propiedades disponibles.
+        </div>
 
         <div class="section">
             <h2>🔥 Propiedades en Venta</h2>
             <div class="properties-grid">
-                <div class="property-card">
-                    <span class="priority priority-media">PRIORIDAD MEDIA</span>
-                    <h3>Terreno Bicentenarios</h3>
-                    <div class="price">$588,000</div>
-                    <div class="location">📍 Santo Domingo, Tehuacán<br>📐 98 m²</div>
-                    <a href="venta/terreno-bicentenarios.html" class="btn">Ver Fotos 📸</a>
-                    <a href="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/fotos-venta/fotosBicentenario.zip" class="btn download-all">📥 ZIP</a>
-                </div>
-
-                <div class="property-card">
-                    <span class="priority priority-baja">PRIORIDAD BAJA</span>
-                    <h3>Casa Francisco Sarabia</h3>
-                    <div class="price">$14,000,000</div>
-                    <div class="location">📍 Tehuacán<br>📐 1,430 m² terreno / 404 m² construcción</div>
-                    <a href="venta/casa-francisco-sarabia.html" class="btn">Ver Fotos 📸</a>
-                    <a href="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/fotos-venta/fotosSarabia.zip" class="btn download-all">📥 ZIP</a>
-                </div>
-
-                <div class="property-card">
-                    <span class="priority priority-baja">PRIORIDAD BAJA</span>
-                    <h3>Casa Cinco Bosques</h3>
-                    <div class="price">$8,000,000</div>
-                    <div class="location">📍 Fracc. Cinco Bosques, Tehuacán<br>📐 400 m²</div>
-                    <a href="venta/casa-cinco-bosques.html" class="btn">Ver Fotos 📸</a>
-                    <a href="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/fotos-venta/fotosBosques.zip" class="btn download-all">📥 ZIP</a>
-                </div>
-
-                <div class="property-card">
-                    <span class="priority priority-media">PRIORIDAD MEDIA</span>
-                    <h3>Casa Valle de la Luna</h3>
-                    <div class="price">$5,200,000</div>
-                    <div class="location">📍 Valle del Sol, Tehuacán<br>📐 276 m² terreno / 186 m² construcción</div>
-                    <a href="venta/casa-valle-luna.html" class="btn">Ver Fotos 📸</a>
-                    <a href="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/fotos-venta/fotosValleDeLuna.zip" class="btn download-all">📥 ZIP</a>
-                </div>
+                <div class="no-disponible">No hay propiedades en venta disponibles actualmente.</div>
             </div>
         </div>
 
         <div class="section">
             <h2>🔑 Propiedades en Renta</h2>
             <div class="properties-grid">
-                <div class="property-card">
-                    <span class="priority priority-alta">🔥 PRIORIDAD ALTA</span>
-                    <h3>Casa Jazmín</h3>
-                    <div class="price">$5,300/mes</div>
-                    <div class="location">📍 Calle Jazmín #432, Col. Jacarandas, Tehuacán<br>📐 92 m² | Uso mixto habitacional/comercial</div>
-                    <a href="renta/jazmin.html" class="btn">Ver Fotos 📸</a>
-                    <a href="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/fotos-renta/fotosJazmin.zip" class="btn download-all">📥 ZIP</a>
-                </div>
-
-                <div class="property-card">
-                    <span class="priority priority-alta">🔥 PRIORIDAD ALTA</span>
-                    <h3>Cuarto 4 - 16 Norte</h3>
-                    <div class="price">$2,500/mes</div>
-                    <div class="location">📍 16 Norte #127, Col. Aquiles Serdán, Tehuacán<br>⚠️ Última unidad disponible</div>
-                    <a href="renta/16norte-cuartos.html" class="btn">Ver Fotos 📸</a>
-                    <a href="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/fotos-renta/fotos16NorteCuarto.zip" class="btn download-all">📥 ZIP</a>
-                </div>
-
-                <div class="property-card">
-                    <span class="priority priority-baja">PRIORIDAD BAJA</span>
-                    <h3>Departamento Valsequillo</h3>
-                    <div class="price">$5,000/mes</div>
-                    <div class="location">📍 Blvd. Valsequillo, Tehuacán<br>📐 60 m² | 2 recámaras</div>
-                    <a href="renta/valsequillo.html" class="btn">Ver Fotos 📸</a>
-                    <a href="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/fotos-renta/fotosValsequillo.zip" class="btn download-all">📥 ZIP</a>
-                </div>
-
-                <div class="property-card">
-                    <span class="priority priority-alta">🔥 PRIORIDAD ALTA</span>
-                    <h3>Departamento Aquiles Serdán</h3>
-                    <div class="price">$2,500/mes</div>
-                    <div class="location">📍 16 Norte #127, Col. Aquiles Serdán, Tehuacán<br>📐 1 recámara</div>
-                    <a href="renta/16norte-cuartos.html" class="btn">Ver Fotos 📸</a>
-                    <a href="https://saqtzkqretamxctgnvlt.supabase.co/storage/v1/object/public/fotos-renta/fotos16NorteCuarto.zip" class="btn download-all">📥 ZIP</a>
-                </div>
+                <div class="no-disponible">No hay propiedades en renta disponibles actualmente.</div>
             </div>
         </div>
 
